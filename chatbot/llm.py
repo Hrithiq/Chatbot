@@ -4,7 +4,7 @@ from bentoml.io import JSON
 
 LLM_MODEL_ID = "gpt2"
 
-openai.api_key = "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"
+openai.api_key = "0K0YA"
 
 class LLMService:
     def __init__(self):
