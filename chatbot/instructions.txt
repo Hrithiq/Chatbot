@@ -1,0 +1,18 @@
+Run the given commands in different cmd terminals:
+
+bentoml serve embedding.py:SentenceTransformers
+
+bentoml serve llm.py:svc
+
+bentoml serve service.py:svc
+
+and use then use curl to input a text/pdf file 
+
+curl -i -X POST -H "Content-Type: multipart/form-data" \ -F file=@"C:\Users\hrith\Downloads\paul.txt" "http://localhost:3000/ingest_text"
+
+and this to add the query 
+
+curl -X POST "http://localhost:3000/query" -H "Content-Type: application/json" -d "{\"query\": \"What is the content of the document?\"}"
+
+
+

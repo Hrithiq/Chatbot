@@ -1,0 +1,6 @@
+bentoml
+llama-index
+openai
+sentence-transformers
+fastapi
+httpx
